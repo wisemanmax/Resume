@@ -1,5 +1,5 @@
 
-const text = "Young Cowboy";
+const text = "Byheir Wise";
 const typedText = document.querySelector('.typed-text');
 const cursor = document.querySelector('.cursor');
 let charIndex = 0;
