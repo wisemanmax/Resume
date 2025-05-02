@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +8,8 @@
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 <body>
+
+  <!-- NAVBAR -->
   <nav class="navbar">
     <ul>
       <li><a href="#frontend">Front-End</a> | <a href="frontend.html">Details →</a></li>
@@ -21,15 +22,93 @@
     </ul>
     <button id="themeToggle">🌓</button>
   </nav>
-  <section class="hero" style="background: linear-gradient(black, #111);">
+
+  <!-- HERO -->
+  <section class="hero parallax" style="background-image: url('images/hero-code.jpg');">
     <div class="content fade-in intro-card">
-      <h1 class="name-title"><span class="typed-text">Byheir Wise</span><span class="cursor">|</span></h1>
+      <h1 class="name-title"><span class="typed-text"></span><span class="cursor">|</span></h1>
       <p class="role-title">Full-Stack Developer & Data Wizard</p>
-      <p class="bio-summary">Scroll to explore. Click 'Details →' on each section for deep dives.</p>
+      <p class="bio-summary">
+        Scroll to explore. Click 'Details →' on each section for deep dives.
+      </p>
       <a href="Byheir_Wise_Resume.pdf" class="resume-btn" download>📄 Download Resume</a>
     </div>
   </section>
-  <!-- Imagine other animated sections here (omitted for brevity) -->
+
+  
+  <!-- FRONT-END -->
+  <section id="frontend" class="info-section parallax" style="background-image: url('images/frontend.jpg');">
+    <div class="content fade-up">
+      <h2 class="cyan">Front-End Engineering</h2>
+      <p>From responsive layouts to dynamic UI, using React, Tailwind, and JavaScript to bring ideas to life.</p>
+      <div class="image-wrapper">
+        <div class="image-container">
+          <img src="images/frontend-ui-review.png" alt="Frontend Review" class="popup-img" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BACK-END -->
+  <section id="backend" class="info-section parallax" style="background-image: url('images/backend.jpg');">
+    <div class="content fade-up">
+      <h2 class="amber">Back-End Development</h2>
+      <p>Robust APIs with .NET, Node.js, and secure data storage using SQL, MongoDB, and AWS.</p>
+      <div class="image-wrapper">
+        <div class="image-container">
+          <img src="images/backend-queries.png" alt="Backend Queries" class="popup-img" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEVOPS -->
+  <section id="devops" class="info-section parallax" style="background-image: url('images/devops.jpg');">
+    <div class="content fade-up">
+      <h2 class="purple">Automation & DevOps</h2>
+      <p>CI/CD pipelines, Git workflows, SonarQube quality checks, and deployment strategies built to scale.</p>
+      <div class="image-wrapper">
+        <div class="image-container">
+          <lottie-player
+            class="popup-img"
+            src="https://assets4.lottiefiles.com/packages/lf20_zxv3lsdh.json"
+            background="transparent"
+            speed="1"
+            loop
+            autoplay>
+          </lottie-player>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECURITY -->
+  <section id="security" class="info-section parallax" style="background-image: url('images/security.jpg');">
+    <div class="content fade-up">
+      <h2 class="teal">Data Engineering & Security</h2>
+      <p>Building pipelines with Snowflake, securing credentials with Secrets Manager, and keeping compliance on lock.</p>
+      <div class="image-wrapper">
+        <div class="image-container">
+          <img src="images/data-dashboard.png" alt="Data Dashboard" class="popup-img" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="frontend" class="info-section parallax" style="background-image: url('images/frontend.jpg');">
+    <div class="content fade-up">
+      <h2 class="cyan">Front-End Engineering</h2>
+      <p>Building responsive, animated, and reactive UIs using modern frameworks.</p>
+      <div class="image-wrapper">
+        <div class="image-container">
+          <img src="images/frontend-ui-review.png" alt="Frontend Visual" class="popup-img" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Add other sections below similarly... -->
+
   <script src="script.js"></script>
 </body>
 </html>
