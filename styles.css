@@ -1,1 +1,1 @@
-body { background-color: black; color: white; font-family: sans-serif; }
+body { background: #111; color: white; font-family: sans-serif; padding: 2rem; } .navbar ul { list-style: none; display: flex; gap: 1rem; } .content { max-width: 1000px; margin: auto; } .skills-list { columns: 2; }
