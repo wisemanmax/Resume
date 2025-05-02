@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Young Cowboy's Developer Portfolio — Full Stack Projects in .NET, SQL, JavaScript, React, and Snowflake.">
   <title>Young Cowboy - Portfolio</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="styles.css" />
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
@@ -26,12 +28,14 @@
   <!-- HERO / INTRO -->
   <section class="hero parallax" style="background-image: url('images/hero-code.jpg');">
     <div class="content fade-in intro-card">
-      <h1 class="name-title"><span class="typed-text"></span><span class="cursor">|</span></h1>
-      <p class="role-title">Full-Stack Developer & Data Wizard</p>
+      <h1 class="name-title"><span class="typed-text">Young Cowboy</span><span class="cursor">|</span></h1>
+      <p class="role-title">Full-Stack Developer • Data Engineer • Builder</p>
       <p class="bio-summary">
-      Over 6 years of experience developing clean front-end interfaces, secure back-end services, and automated systems using .NET, SQL, JavaScript, and Snowflake. Proven track record of rapid debugging and efficient problem-solving. Scroll down to explore my work..
+        Over 6 years building clean front-end interfaces, secure back-end services, and automated systems using .NET, SQL, JavaScript, and Snowflake.  
+        Known for debugging faster than coffee hits ☕ — scroll down and see how I move.
       </p>
-      <a href="Byheir_Wise_Resume.pdf" class="resume-btn" download>📄 Download Resume</a>
+      <a href="Byheir_Wise_Resume.pdf" class="resume-btn" download>📄 Download My Resume</a>
+      <div class="scroll-indicator">⬇ Scroll for Projects & Stack</div>
     </div>
   </section>
 
@@ -70,7 +74,7 @@
         <div class="image-container">
           <lottie-player
             class="popup-img"
-            src="https://www.cedarsoundstudios.com/cdn/shop/articles/how-to-mix-your-vocals-like-nba-youngboy-mixing-guide-443412.png?v=1740002661&width=1100"
+            src="https://assets7.lottiefiles.com/packages/lf20_2LdLki.json"
             background="transparent"
             speed="1"
             loop
@@ -85,7 +89,7 @@
   <section id="security" class="info-section parallax" style="background-image: url('images/security.jpg');">
     <div class="content fade-up">
       <h2 class="teal">Data Engineering & Security</h2>
-      <p>Building pipelines with Snowflake, securing credentials with Secrets Manager, and keeping compliance on lock.</p>
+      <p>Building pipelines with Snowflake, securing credentials with AWS Secrets Manager, and keeping compliance on lock.</p>
       <div class="image-wrapper">
         <div class="image-container">
           <img src="https://i1.sndcdn.com/artworks-64PNPjTgUBKldToD-pO3dgA-t500x500.jpg" alt="Data Dashboard" class="popup-img" />
@@ -134,12 +138,25 @@
   <section id="contact" class="info-section" style="background: #111;">
     <div class="content fade-up">
       <h2 class="cyan">Contact Me</h2>
-      <p>Let's Work on the bigger issue: <a href="mailto:youngcowboy@example.com">ByheirW@gmail.com</a></p>
+      <p>Let’s build something solid. Reach out at <a href="mailto:ByheirW@gmail.com">ByheirW@gmail.com</a></p>
     </div>
   </section>
 
+  <!-- Scroll Animation -->
+  <style>
+    .scroll-indicator {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      color: var(--accent);
+      animation: bounce 2s infinite;
+      text-align: center;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(10px); }
+    }
+  </style>
+
   <script src="script.js"></script>
 </body>
-  
 </html>
-
