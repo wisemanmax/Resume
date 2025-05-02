@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Young Cowboy's Developer Portfolio — Full Stack Projects in .NET, SQL, JavaScript, React, and Snowflake.">
   <title>Young Cowboy - Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
@@ -10,209 +10,77 @@
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 <body>
-
   <!-- NAVBAR -->
-  <nav class="navbar">
+  <nav class="navbar" aria-label="Main navigation">
     <ul>
-      <li><a href="#frontend">Front-End</a></li>
-      <li><a href="#backend">Back-End</a></li>
-      <li><a href="#devops">DevOps</a></li>
-      <li><a href="#security">Security</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#tech">Tech</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#frontend" aria-label="Go to Front-End section">Front-End</a></li>
+      <li><a href="#backend" aria-label="Go to Back-End section">Back-End</a></li>
+      <li><a href="#devops" aria-label="Go to DevOps section">DevOps</a></li>
+      <li><a href="#security" aria-label="Go to Security section">Security</a></li>
+      <li><a href="#projects" aria-label="Go to Projects section">Projects</a></li>
+      <li><a href="#tech" aria-label="Go to Tech section">Tech</a></li>
+      <li><a href="#contact" aria-label="Go to Contact section">Contact</a></li>
     </ul>
-    <button id="themeToggle">🌓</button>
+    <button id="themeToggle" aria-label="Toggle light and dark mode">🌓</button>
   </nav>
 
-  <!-- HERO / INTRO -->
+  <!-- HERO SECTION -->
   <section class="hero parallax" style="background-image: url('images/hero-code.jpg');">
     <div class="content fade-in intro-card">
-      <h1 class="name-title"><span class="typed-text">Young Cowboy</span><span class="cursor">|</span></h1>
+      <h1 class="name-title"><span class="typed-text">Young Cowboy</span><span class="cursor" aria-hidden="true">|</span></h1>
       <p class="role-title">Full-Stack Developer • Data Engineer • Builder</p>
       <p class="bio-summary">
-        Over 6 years building clean front-end interfaces, secure back-end services, and automated systems using .NET, SQL, JavaScript, and Snowflake.  
+        Over 6 years building clean front-end interfaces, secure back-end services, and automated systems using .NET, SQL, JavaScript, and Snowflake.
         Known for debugging faster than coffee hits ☕ — scroll down and see how I move.
       </p>
-      <a href="Byheir_Wise_Resume.pdf" class="resume-btn" download>📄 Download My Resume</a>
-      <div class="scroll-indicator">⬇ Scroll for Projects & Stack</div>
+      <a href="Byheir_Wise_Resume.pdf" class="resume-btn" download aria-label="Download my resume">📄 Download My Resume</a>
+      <div class="scroll-indicator" aria-hidden="true">⬇ Scroll for Projects & Stack</div>
     </div>
   </section>
 
-    <!-- FRONT-END -->
-  <section id="frontend" class="info-section parallax bg-gradient-to-b from-black to-blue-900 section">
+  <!-- FRONT-END SECTION -->
+  <section id="frontend" class="info-section parallax bg-gradient-to-b from-black to-blue-900">
     <div class="content-container">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <div>
-          <h2 class="text-4xl md:text-5xl font-bold mb-6 fade-in active">Frontend <span class="gradient-text">Mastery</span></h2>
-          <p class="text-lg text-gray-300 mb-8 fade-in active">Create stunning user interfaces with modern frameworks and cutting-edge design principles.</p>
-          <div class="space-y-6 fade-in active">
-            <div class="skill-card">
-              <div class="flex justify-between items-center mb-2">
-                <h3 class="text-xl font-semibold">React</h3>
-                <span>95%</span>
-              </div>
-              <div class="progress-bar bg-gray-700 rounded-full h-2 w-full">
-                <div class="progress-fill bg-blue-500 h-2 rounded-full" style="width: 95%;"></div>
-              </div>
-            </div>
-            <div class="skill-card">
-              <div class="flex justify-between items-center mb-2">
-                <h3 class="text-xl font-semibold">Vue.js</h3>
-                <span>85%</span>
-              </div>
-              <div class="progress-bar bg-gray-700 rounded-full h-2 w-full">
-                <div class="progress-fill bg-green-500 h-2 rounded-full" style="width: 85%;"></div>
-              </div>
-            </div>
-            <div class="skill-card">
-              <div class="flex justify-between items-center mb-2">
-                <h3 class="text-xl font-semibold">CSS/SASS</h3>
-                <span>90%</span>
-              </div>
-              <div class="progress-bar bg-gray-700 rounded-full h-2 w-full">
-                <div class="progress-fill bg-pink-500 h-2 rounded-full" style="width: 90%;"></div>
-              </div>
-            </div>
+      <h2 class="text-4xl font-bold mb-6 fade-in">Frontend <span class="gradient-text">Mastery</span></h2>
+      <p class="text-lg text-gray-300 mb-8 fade-in">Create stunning user interfaces with modern frameworks and cutting-edge design principles.</p>
+      <div class="skills-grid fade-in">
+        <div class="skill-card">
+          <h3 class="text-xl font-semibold">React</h3>
+          <div class="progress-bar">
+            <div class="progress-fill bg-blue-500" style="width: 95%;"></div>
           </div>
         </div>
-        <div class="relative fade-in active">
-          <div class="code-block floating bg-black/50 text-green-400 p-6 rounded-lg shadow-lg">
-            <pre class="text-sm leading-relaxed">
-<span class="keyword">import</span> React, { useState } <span class="keyword">from</span> <span class="string">'react'</span>;
-
-<span class="keyword">const</span> App = () => {
-  <span class="keyword">const</span> [count, setCount] = useState(<span class="number">0</span>);
-
-  <span class="keyword">return</span> (
-    &lt;div className="container"&gt;
-      &lt;h1&gt;React Counter&lt;/h1&gt;
-      &lt;p&gt;Count: {count}&lt;/p&gt;
-      &lt;button onClick={() => setCount(count + 1)}&gt;
-        Increment
-      &lt;/button&gt;
-    &lt;/div&gt;
-  );
-};
-
-<span class="keyword">export default</span> App;
-            </pre>
+        <div class="skill-card">
+          <h3 class="text-xl font-semibold">Vue.js</h3>
+          <div class="progress-bar">
+            <div class="progress-fill bg-green-500" style="width: 85%;"></div>
           </div>
-          <svg class="absolute -z-10 rotating" width="500" height="500" viewBox="0 0 100 100" style="top: -50px; right: -50px; opacity: 0.1;">
-            <circle cx="50" cy="50" r="40" stroke="white" stroke-width="0.5" fill="none"></circle>
-            <circle cx="50" cy="50" r="30" stroke="white" stroke-width="0.5" fill="none"></circle>
-            <circle cx="50" cy="50" r="20" stroke="white" stroke-width="0.5" fill="none"></circle>
-          </svg>
+        </div>
+        <div class="skill-card">
+          <h3 class="text-xl font-semibold">CSS/SASS</h3>
+          <div class="progress-bar">
+            <div class="progress-fill bg-pink-500" style="width: 90%;"></div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-
-  <!-- BACK-END -->
+  <!-- BACK-END SECTION -->
   <section id="backend" class="info-section parallax" style="background-image: url('images/backend.jpg');">
     <div class="content fade-up">
       <h2 class="amber">Back-End Development</h2>
       <p>Robust APIs with .NET, Node.js, and secure data storage using SQL, MongoDB, and AWS.</p>
-      <div class="image-wrapper">
-        <div class="image-container">
-          <img src="https://history.hiphop/wp-content/uploads/2022/11/NBAYoungBoy.webp" alt="Backend Queries" class="popup-img" />
-        </div>
-      </div>
     </div>
   </section>
 
-  <!-- DEVOPS -->
-  <section id="devops" class="info-section parallax" style="background-image: url('images/devops.jpg');">
-    <div class="content fade-up">
-      <h2 class="purple">Automation & DevOps</h2>
-      <p>CI/CD pipelines, Git workflows, SonarQube quality checks, and deployment strategies built to scale.</p>
-      <div class="image-wrapper">
-        <div class="image-container">
-          <lottie-player
-            class="popup-img"
-            src="https://assets7.lottiefiles.com/packages/lf20_2LdLki.json"
-            background="transparent"
-            speed="1"
-            loop
-            autoplay>
-          </lottie-player>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SECURITY -->
-  <section id="security" class="info-section parallax" style="background-image: url('images/security.jpg');">
-    <div class="content fade-up">
-      <h2 class="teal">Data Engineering & Security</h2>
-      <p>Building pipelines with Snowflake, securing credentials with AWS Secrets Manager, and keeping compliance on lock.</p>
-      <div class="image-wrapper">
-        <div class="image-container">
-          <img src="https://i1.sndcdn.com/artworks-64PNPjTgUBKldToD-pO3dgA-t500x500.jpg" alt="Data Dashboard" class="popup-img" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects" class="info-section parallax" style="background-image: url('images/projects.jpg');">
-    <div class="content fade-up">
-      <h2 class="cyan">Project Showcase</h2>
-      <div class="project-grid">
-        <div class="project-card">
-          <h3>Collections Portal</h3>
-          <p>.NET + Snowflake + secure credential flow</p>
-        </div>
-        <div class="project-card">
-          <h3>SonarQube Automation</h3>
-          <p>Resolved 800+ issues in CI/CD pipeline</p>
-        </div>
-        <div class="project-card">
-          <h3>Credit Quality System</h3>
-          <p>Form grading engine w/ real-time logic</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TECH STACK -->
-  <section id="tech" class="info-section parallax" style="background-image: url('images/tech.jpg');">
-    <div class="content fade-up">
-      <h2 class="teal">Tech Stack</h2>
-      <div class="tech-grid">
-        <div class="tech-icon" title=".NET">.NET</div>
-        <div class="tech-icon" title="Snowflake">❄</div>
-        <div class="tech-icon" title="React">⚛</div>
-        <div class="tech-icon" title="JavaScript">JS</div>
-        <div class="tech-icon" title="SQL">SQL</div>
-        <div class="tech-icon" title="Power BI">📊</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
+  <!-- CONTACT SECTION -->
   <section id="contact" class="info-section" style="background: #111;">
     <div class="content fade-up">
       <h2 class="cyan">Contact Me</h2>
       <p>Let’s build something solid. Reach out at <a href="mailto:ByheirW@gmail.com">ByheirW@gmail.com</a></p>
     </div>
   </section>
-
-  <!-- Scroll Animation -->
-  <style>
-    .scroll-indicator {
-      margin-top: 1rem;
-      font-size: 1.2rem;
-      color: var(--accent);
-      animation: bounce 2s infinite;
-      text-align: center;
-    }
-    @keyframes bounce {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(10px); }
-    }
-  </style>
 
   <script src="script.js"></script>
 </body>
