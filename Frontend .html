@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frontend Mastery</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <section class="container">
+    <div class="skills">
+      <h1><span class="highlight">Frontend</span> Mastery</h1>
+      <p>Create stunning user interfaces with modern frameworks and cutting-edge design principles.</p>
+      <div class="skill-bar">
+        <p>React</p>
+        <div class="bar"><div class="fill react">95%</div></div>
+      </div>
+      <div class="skill-bar">
+        <p>Vue.js</p>
+        <div class="bar"><div class="fill vue">85%</div></div>
+      </div>
+      <div class="skill-bar">
+        <p>CSS/SASS</p>
+        <div class="bar"><div class="fill css">90%</div></div>
+      </div>
+    </div>
+    <div class="code-block">
+      <pre><code class="language-js">
+import React, { useState } from 'react';
+
+const App = () => {
+  const [count, setCount] = useState(0);
+
+  return (
+    &lt;div className="container"&gt;
+      &lt;h1&gt;React Counter&lt;/h1&gt;
+      &lt;p&gt;Count: {count}&lt;/p&gt;
+      &lt;button onClick={() => setCount(count + 1)}&gt;
+        Increment
+      &lt;/button&gt;
+    &lt;/div&gt;
+  );
+};
+
+export default App;
+      </code></pre>
+    </div>
+  </section>
+</body>
+</html>

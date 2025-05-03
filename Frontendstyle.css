@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f172a;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 40px 20px;
+}
+
+.skills {
+  max-width: 400px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  color: #22d3ee;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.skill-bar {
+  margin-bottom: 20px;
+}
+
+.bar {
+  width: 100%;
+  background: #1e293b;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  line-height: 20px;
+  text-align: right;
+  padding-right: 10px;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.react {
+  width: 95%;
+  background: #3b82f6;
+}
+
+.vue {
+  width: 85%;
+  background: #10b981;
+}
+
+.css {
+  width: 90%;
+  background: #ec4899;
+}
+
+.code-block {
+  background: #1e293b;
+  color: #cbd5e1;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  overflow-x: auto;
+  font-family: monospace;
+  font-size: 0.9rem;
+  white-space: pre-wrap;
+}
